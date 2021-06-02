@@ -40,6 +40,7 @@ const Li = styled.li`
 export default withRouter(({location:{pathname}}) => (
     <Header>
         {console.log({location:{pathname}})}
+      
     <List>
         <Li current={pathname==="/"}>
             <SLink to="/">Moviessss</SLink>

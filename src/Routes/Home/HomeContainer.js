@@ -26,6 +26,8 @@ export default class extends React.Component {
                 popular,
                 topRated
             });
+            //const ccc= await movieApi.nowPlaying();
+            //console.log(ccc); //# json 어케 생겼는지 확인
            
         }
         catch{
