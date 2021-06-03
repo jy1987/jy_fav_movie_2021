@@ -16,13 +16,13 @@ const TVPresenter = ({airingToday,
         loading ? <Loader/> : (
             <Container>
                 {popular && popular.length >0 && (
-                <Section title="Popular" children = {popular.map(tv => tv.name)}></Section>)}
+                <Section title="Popular" children = {popular.map(tv => (<span key={tv.id}>{tv.name}</span>))}></Section>)}
 
                 {airingToday && airingToday.length >0 && (
-                <Section title="Airing Today" children = {airingToday.map(tv => tv.name)}></Section>)}
+                <Section title="Airing Today" children = {airingToday.map(tv => (<span key={tv.id}>{tv.name}</span>))}></Section>)}
 
                 {topRated && topRated.length >0 && (
-                <Section title="topRated" children = {topRated.map(tv => tv.name)}></Section>)}
+                <Section title="topRated" children = {topRated.map(tv => (<span key={tv.id}>{tv.name}</span>))}></Section>)}
 
             </Container>
         )
